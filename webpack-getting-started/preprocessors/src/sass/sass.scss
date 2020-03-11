@@ -1,0 +1,31 @@
+$primary-color: red;
+$secondary-color: green;
+$other-color: lightblue;
+
+body {
+  background: $other-color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  font-size: 40px;
+  font-family: Arial;
+  border: dashed 2px black;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border: 3px dashed $primary-color;
+  align-items: center;
+
+  .flex-item {
+    color: $secondary-color;
+    border: 2px $primary-color dashed;
+    padding:4px;
+    margin: 8px;
+  }
+}
